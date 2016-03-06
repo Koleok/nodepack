@@ -7,7 +7,7 @@ const helpers = helpersFactory({
   ...deps
 });
 
-describe('Helpers example function', () => {
+describe('When passed an argument of "sandwich"', () => {
   const result = helpers.exampleFunction({
     arg: 'sandwich :)'
   });
