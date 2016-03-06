@@ -1,5 +1,5 @@
 {
-  "name": "mission-control-api-dbsync",
+  "name": "nodepack",
   "version": "1.0.0",
   "description": "Starter for node apps using babel and webpack",
   "main": "bundle.js",
