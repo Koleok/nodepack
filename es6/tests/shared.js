@@ -1,7 +1,4 @@
-import {
-  expect
-}
-from 'chai';
+import { expect } from 'chai';
 
 /**
  * Runs the test of the specified type from the specified dir
@@ -23,15 +20,18 @@ export const run = test => {
 export const testIfExists = val => {
   describe('should not equal any falsey or empty value', () => {
     it('should not return null', () => {
-      expect(val).to.not.be.null;
+      expect(val)
+        .to.not.be.null;
     });
 
     it('should not return undefined', () => {
-      expect(val).to.not.be.undefined;
+      expect(val)
+        .to.not.be.undefined;
     });
 
     it('should not return an empty object or array', () => {
-      expect(val).to.not.be.empty;
+      expect(val)
+        .to.not.be.empty;
     });
   });
 };
@@ -43,7 +43,10 @@ export const testIfExists = val => {
  * @param {Object} options {data {Object}, method {String}, type {String}, expected {AnyType}}
  */
 export const shouldReturnQuery = (builder, {
-  data, method, type, expected
+  data,
+  method,
+  type,
+  expected
 }) => {
   describe(`given the method '${method}' with a valid argument ${type}`, () => {
     const result = builder[method](data);
@@ -51,11 +54,13 @@ export const shouldReturnQuery = (builder, {
     testIfExists(result);
 
     it(`should return a(n) ${type}`, () => {
-      expect(result).to.be.a(type);
+      expect(result)
+        .to.be.a(type);
     });
 
     it(`should return ${expected}`, () => {
-      expect(result.toString()).to.equal(expected);
+      expect(result.toString())
+        .to.equal(expected);
     });
   });
 };

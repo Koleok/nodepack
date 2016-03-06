@@ -1,15 +1,12 @@
-import {
-  run
-}
-from './shared'
+import { run } from './shared'
 
 describe('all tests', () => {
 
   describe('unit tests', () => {
-    // run({
-    //   name: 'testName',
-    //   type: 'testType'
-    // });
+    run({
+      name: 'example',
+      type: 'unit'
+    });
   });
 
   describe('integration tests', () => {
