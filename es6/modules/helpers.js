@@ -1,9 +1,9 @@
 export default ({
   _
 }) => ({
+
   exampleFunction: ({
     arg
-  }) => ({
-    result: _.result(arg)
-  })
+  }) => `Check out this result! ${arg}`
+
 });

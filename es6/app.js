@@ -9,3 +9,9 @@ const {
 const helpers = helpersFactory({
   ...deps
 });
+
+const result = helpers.exampleFunction({
+  arg: 'sandwich :)'
+});
+
+console.log(result);
